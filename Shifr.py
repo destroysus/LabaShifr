@@ -1,7 +1,7 @@
 alfavit_EU =  'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alfavit_RU = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
 smeshenie = int(input('Введите число, равное смещению : '))
-message = input("Сообщение для ДЕшифровки: ").upper()
+message = input("Введите сообщение: ").upper()
 itog = ''
 language = input('Выберите язык RU/EU: ').upper()
 if language == 'RU':
