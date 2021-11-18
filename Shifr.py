@@ -1,9 +1,23 @@
 alfavit_EU =  'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alfavit_RU = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
-smeshenie = int(input('Введите число, равное смещению : '))
+a='RU'
+b='EU'
+while True:
+    try:
+        smeshenie = int(input('Введите число, равное смещению : '))
+        if smeshenie == int(smeshenie):
+            break
+    except :
+        print("Ошибка - это не число")
 message = input("Введите сообщение: ").upper()
 itog = ''
-language = input('Выберите язык RU/EU: ').upper()
+while True:
+    try:
+        language = input('Выберите язык RU/EU: ').upper()   
+        if language == a or language == b:
+            break
+    except :
+        print("Введите RU(Русский язык) или EU(Английский язык)")
 if language == 'RU':
     for i in message:
         mesto = alfavit_RU.find(i)
